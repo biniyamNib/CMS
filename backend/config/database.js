@@ -29,7 +29,7 @@ const sequelize = new Sequelize({
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false, // Required for Neon and Render connections
+      rejectUnauthorized: false, 
     },
   },
 });

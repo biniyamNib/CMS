@@ -29,13 +29,7 @@ const upload = multer({
   limits: {
     fileSize: 5 * 1024 * 1024, // Limit file size to 5MB
   },
-  // fileFilter: (req, file, cb) => {
-  //   if (file.mimetype.startsWith('image/')) {
-  //     cb(null, true);
-  //   } else {
-  //     cb(new Error('Only image files are allowed!'), false);
-  //   }
-  // },
+
 });
 
 
@@ -45,11 +39,6 @@ userRouter.get('/users/:id', protect, restrictTo('SuperAdmin', 'Admin', 'HR'), g
 userRouter.post('/users', protect, restrictTo('SuperAdmin', 'Admin'), createUser);
 userRouter.patch('/users/:id', protect, restrictTo('SuperAdmin', 'Admin', ),upload.single('profilePic'), updateUser);
 userRouter.delete('/users/:id', protect, restrictTo('SuperAdmin', 'Admin'), deleteUser);
-// userRouter.post('/users/reset-password-request', requestPasswordReset);
-// userRouter.post('/users/reset-password', resetPassword);
-// userRouter.post('/users/:id/enable-2fa', protect, enable2FA);
-// userRouter.post('/users/verify-2fa', protect, verify2FA);
-//userRouter.get('/roles', protect, restrictTo('Admin'), getRoles);
 userRouter.post('/users/assign-company', protect, restrictTo('SuperAdmin', 'Admin'), assignUserToCompany);
 userRouter.get('/users/:id/companies', protect, restrictTo('SuperAdmin', 'Admin', 'HR'), getUserCompanies);
 
