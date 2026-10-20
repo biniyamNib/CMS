@@ -5,7 +5,6 @@ import { protect, restrictTo } from '../middlewares/authMiddleware.js';
 
 const authRouter = express.Router();
 
-// Configure multer with disk storage
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'Uploads/');

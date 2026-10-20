@@ -44,7 +44,7 @@ const __dirname = path.dirname(__filename);
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://cms-virid-gamma.vercel.app',
   methods: ['GET', 'POST', 'PATCH', 'PUT','DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
