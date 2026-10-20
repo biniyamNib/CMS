@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Input from '../common/Input';
 import Button from '../common/Button';
 import Notification from '../common/Notification';
-//import { getDesignationQualifications, addDesignationQualification, updateDesignationQualification, deleteDesignationQualification } from '../services/designationService';
 
 const DesignationQualificationManagement = () => {
     const [qualifications, setQualifications] = useState([]);

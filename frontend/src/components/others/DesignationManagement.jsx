@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import Input from '../common/Input';
 import Button from '../common/Button';
 import Notification from '../common/Notification';
-//import { getDesignations, addDesignation, updateDesignation, deleteDesignation } from '../services/designationService';
 
 const DesignationManagement = () => {
     const [designations, setDesignations] = useState([]);

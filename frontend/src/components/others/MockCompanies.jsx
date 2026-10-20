@@ -8,7 +8,6 @@ import {
 } from '@heroicons/react/24/outline';
 
 
-// Company Widget Component (Metric Cards)
 function CompanyWidget({ title, value, icon: Icon, delay, trend, link }) {
   return (
     <Link

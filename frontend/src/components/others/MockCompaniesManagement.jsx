@@ -9,7 +9,6 @@ import {
 } from '@heroicons/react/24/outline';
 
 function MockCompaniesManagement() {
-  // Mock data for cards (replace with real API data later)
   const cards = [
     {
       title: 'Companies',
