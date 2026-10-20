@@ -26,6 +26,12 @@ const sequelize = new Sequelize({
     charset: 'utf8',
     collate: 'utf8_general_ci',
   },
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false, // Required for Neon and Render connections
+    },
+  },
 });
 
 async function testConnection() {
