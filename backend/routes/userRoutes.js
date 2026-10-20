@@ -1,6 +1,4 @@
 import express from 'express';
-// import { getCurrentUser } from '../controllers/authController.js';
-// import { protect, restrictTo } from '../middlewares/auth.js';
 import multer from 'multer';
 import {
   createUser,
@@ -10,14 +8,7 @@ import {
   deleteUser,
   assignUserToCompany,
   getUserCompanies,
-  // requestPasswordReset,
-  // resetPassword,
-  // enable2FA,
-  // verify2FA,
-  // getRoles,
-  // updateProfile
 } from '../controllers/userController.js';
-// import { enable2FA, requestPasswordReset, resetPassword, verify2FA } from '../controllers/userControllerAdditional.js';
 import { protect, restrictTo } from '../middlewares/authMiddleware.js';
 
 const userRouter = express.Router();

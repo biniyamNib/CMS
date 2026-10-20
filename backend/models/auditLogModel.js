@@ -33,10 +33,6 @@ const AuditLog = sequelize.define('AuditLog', {
     allowNull: false,
     defaultValue: DataTypes.NOW,
   },
-  // Changes: {
-  //   type: DataTypes.JSON,
-  //   allowNull: true,
-  // },
 }, {
   tableName: 'audit_log',
   timestamps: false,

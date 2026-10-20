@@ -20,9 +20,6 @@ orgStructureRouter.use((req, res, next) => {
   next();
 });
 
-// Specific routes first
-//orgStructureRouter.get('/orgStructures/approvals', protect, restrictTo('SuperAdmin'), getOrgStructureApprovals);
-//orgStructureRouter.put('/orgStructures/approvals/:approvalId', protect, restrictTo('SuperAdmin'), respondApprovalRequest);
 orgStructureRouter.post('/orgStructures/assign', protect, restrictTo('SuperAdmin', 'Admin'), assignUserToOrgStructure);
 orgStructureRouter.get('/orgStructures/:orgStructureId/history', protect, restrictTo('SuperAdmin', 'Admin'),getOrgStructureHistory);
 

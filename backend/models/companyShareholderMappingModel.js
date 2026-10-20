@@ -1,7 +1,5 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js';
-// import Company from './companyModel.js';
-// import Shareholder from './shareholderModel.js';
 
 const CompanyShareholderMapping = sequelize.define('company_shareholder_mapping', {
   ShareholderId: {

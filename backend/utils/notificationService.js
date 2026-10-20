@@ -9,10 +9,8 @@ import AuditLog from '../models/auditLogModel.js';
 import sequelize from '../config/database.js';
 import { v4 as uuidv4 } from 'uuid';
 
-// Default system user ID for system-generated notifications
 const SYSTEM_USER_ID = '52c245df-c433-442e-bab8-e4ff94b8a151';
 
-// Check licenses and organizational structures daily at midnight
 const scheduleNotifications = () => {
   cron.schedule('0 0 * * *', async () => {
     console.log('Running notification check for licenses and organizational structures...');

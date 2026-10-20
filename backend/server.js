@@ -17,7 +17,6 @@ import designationRouter from './routes/designationRoutes.js'
 import notificationRouter from './routes/notificationRoutes.js'
 import reportRouter from './routes/reportRoutes.js'
 import { startNotificationScheduler } from './utils/notificationService.js';
-// import checkExpiredOrgStructures from './utils/expiryCheck.js';
 
 
 // Load environment variables
@@ -66,14 +65,8 @@ app.use('/api/', notificationRouter);
 app.use('/api/', reportRouter);
 app.use('/api/', dashboardRouter);
 
-
-// start scheduler
-// checkExpiredOrgStructures();
-
-// Start notification scheduler
 startNotificationScheduler();
 
-// Error handling middleware
 app.use((err, req, res, next) => {
   console.error('Global error:', {
     message: err.message,
