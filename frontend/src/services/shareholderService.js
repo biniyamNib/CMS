@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/shareholders';
+const API_URL = 'https://cms-rpx0.onrender.com/api/shareholders';
 
 export const getShareholders = async () => {
   try {

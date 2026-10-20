@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/companies';
+const API_URL = 'https://cms-rpx0.onrender.com/api/companies';
 
 export const registerCompany = async (companyData) => {
   try {

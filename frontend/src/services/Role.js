@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/roles';
+const API_URL = 'https://cms-rpx0.onrender.com/api/roles';
 
 export const getRoles = async () => {
     try {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/organization';
+const API_URL = 'https://cms-rpx0.onrender.com/api/organization';
 
 export const getOrgStructure = async (companyId) => {
   try {

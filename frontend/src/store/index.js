@@ -5,20 +5,12 @@ import roleReducer from '../slices/roleSlice'
 import authReducer from '../slices/authSlice';
 import companyReducer from '../slices/companySlice'
 import orgStructureReducer from '../slices/orgStructureSlice'
-// import { persistStore, persistReducer } from 'redux-persist'
-// import storage from 'redux-persist/lib/storage';
 import shareholderReducer from '../slices/shareholderSlice'
 import licenseReducer from '../slices/licenseSlice';
 import designationReducer from '../slices/designationSlice';
 import notificationReducer from '../slices/notificationSlice';
 import reportReducer from '../slices/reportSlice';
 
-// const authPersistConfig = {
-//   key: 'auth',
-//   storage,
-// };
-
-// const persitedAuthReducer = persistReducer(authPersistConfig, authReducer);
 
 export const store = configureStore({
   reducer: {
@@ -35,5 +27,3 @@ export const store = configureStore({
     reports: reportReducer,
   },
 });
-
-//export const persistor = persistStore(store);
